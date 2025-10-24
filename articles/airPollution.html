@@ -13,7 +13,13 @@
 
 <body>
     <nav>
-    <button class="navBarButtonMenu">Menu</button>
+        <button class="navBarButtonMenu">Menu</button>
+        <div class="nav-links">
+            <a href="index.html">Acceuil</a>
+            <a href="problem.html">Problems</a>
+            <a href="article.html">Arcticle</a>
+            <a href="#">About us</a>
+        </div>
     </nav>
     <div class="div2_artice2">
         <section class="section1_artcile">
@@ -124,5 +130,25 @@
             </div>
         </section>
     </div>
+    <footer>
+        <div class="footer-content">
+            <span>Menu</span>
+            <div class="social">
+                <a href="#" class="social-icon">in</a>
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">G</a>
+            </div>
+            <span>Copyright © 2019</span>
+        </div>
+        <a href="#hero"><button class="scroll-top">↑</button></a>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector(".navBarButtonMenu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

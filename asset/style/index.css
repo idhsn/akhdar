@@ -19,7 +19,8 @@ body {
     overflow-x: hidden;
 }
 
-.topbar {
+/* Navigation */
+.navbar {
     position: absolute;
     top: 20px;
     right: 40px;
@@ -30,20 +31,16 @@ body {
     gap: 10px;
 }
 
-.updates-link {
+.news-btn {
     background: rgba(14, 36, 73, 0.24);
     backdrop-filter: blur(2px);
     border-radius: 22px;
     padding: 15px 30px;
     font-size: 30px;
     cursor: pointer;
-    font-family: 'BBH Sans Bogle', sans-serif;
-    text-decoration: none;
-    color: var(--white);
-    display: inline-block;
 }
 
-.primary-nav {
+.menu-btn {
     background: var(--green-light);
     border: none;
     border-radius: 16px;
@@ -52,16 +49,14 @@ body {
     color: var(--white);
     cursor: pointer;
     transition: all 0.3s;
-    font-family: 'BBH Sans Bogle', sans-serif;
-    text-decoration: none;
-    display: inline-block;
 }
 
-.primary-nav:hover {
+.menu-btn:hover {
     background: #6fa828;
 }
 
-.banner {
+/* Hero */
+.hero {
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -70,38 +65,38 @@ body {
     position: relative;
 }
 
-.banner::before {
+.hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, transparent 60%);
 }
 
-.banner-text {
+.hero-content {
     position: relative;
     padding: 0 80px;
     max-width: 600px;
 }
 
-.banner h1 {
+.hero h1 {
     font-size: 64px;
     line-height: 0.9;
     margin-bottom: 40px;
     font-weight: 400;
 }
 
-.principles p {
+.hero-values p {
     font-size: 42px;
     line-height: 0.9;
     margin-bottom: 15px;
 }
 
-.principles .emphasis {
+.hero-values .highlight {
     font-size: 64px;
     margin-top: 20px;
 }
 
-.cta-main {
+.btn-primary {
     background: #FFF6E8;
     color: var(--green-primary);
     border: none;
@@ -110,16 +105,14 @@ body {
     font-size: 27px;
     cursor: pointer;
     transition: transform 0.3s;
-    font-family: 'BBH Sans Bogle', sans-serif;
-    text-decoration: none;
-    display: inline-block;
 }
 
-.cta-main:hover {
+.btn-primary:hover {
     transform: scale(1.05);
 }
 
-.features {
+/* Content Section */
+.content-section {
     background: url(/asset/image/home/bg.png);
     background-size: cover;
     height: 1400px;
@@ -127,7 +120,7 @@ body {
     padding: 100px 80px;
 }
 
-.feature-block {
+.content-card {
     display: flex;
     align-items: center;
     gap: 100px;
@@ -135,12 +128,12 @@ body {
     margin: 50px auto;
 }
 
-.feature-block.alternate {
+.content-card.reverse {
     flex-direction: row;
     margin-top: 17.9rem;
 }
 
-.visual {
+.card-img {
     width: 50%;
     min-width: 400px;
     height: 400px;
@@ -149,23 +142,23 @@ body {
     background-position: center;
 }
 
-.description {
+.card-text {
     flex: 1;
 }
 
-.description h2 {
+.card-text h2 {
     font-size: 42px;
     margin-bottom: 20px;
 }
 
-.description p {
+.card-text p {
     font-size: 18px;
     line-height: 1.6;
     color: var(--gray);
     margin-bottom: 30px;
 }
 
-.action-link {
+.btn-green {
     background: var(--green-primary);
     color: var(--white);
     border: none;
@@ -174,16 +167,14 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
-    font-family: 'BBH Sans Bogle', sans-serif;
-    text-decoration: none;
-    display: inline-block;
 }
 
-.action-link:hover {
+.btn-green:hover {
     background: #2d8f3a;
 }
 
-.gallery-area {
+/* Explore/Carousel */
+.exploreOurSecretSection {
     background-image: url(/asset/image/home/ifan-bima-B04Xpnu5JQ4-unsplash\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -191,27 +182,62 @@ body {
     height: 1600px;
 }
 
-.nav-toggle {
-    background: var(--green-light);
-    border: none;
-    border-radius: 16px;
-    padding: 13px 30px;
-    font-size: 30px;
-    color: var(--white);
-    cursor: pointer;
-    transition: all 0.3s;
-    font-family: 'BBH Sans Bogle', sans-serif;
-    text-decoration: none;
-    display: inline-block;
+.byTHeNUmberSection {
+    background-color: rgba(57, 178, 73, 0.6);
+    width: 100%;
+    height: 500px;
+    margin-top: 704px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
 }
 
-.slide-img {
+.textNumPartie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.onetextNumP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+.byTHeNUmberText {
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.numPara {
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.paragrapheLorem {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 21px;
+}
+
+.threeImageGood {
     width: 270px;
     height: 180px;
     margin: 6px;
 }
 
-.showcase {
+.imagesDivThreeExplore {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,7 +245,7 @@ body {
     margin-top: 30px;
 }
 
-.slider-controls {
+.imagesBUtoonPartie {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,26 +253,24 @@ body {
     margin-top: 30px;
 }
 
-.slider-controls a {
+.imagesBUtoonPartie button {
     background: none;
     border: none;
     font-size: x-large;
     cursor: pointer;
-    color: var(--white);
-    text-decoration: none;
 }
 
-.slider-controls a:hover {
+.imagesBUtoonPartie button:hover {
     font-size: xx-large;
     text-shadow: 1px 1px 4px black;
     margin-left: -5px;
 }
 
-.showcase p {
+.imagesDivThreeExplore p {
     font-size: 35px;
 }
 
-.gallery-wrapper {
+.imagesButtonRadioSectionDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,17 +278,19 @@ body {
     gap: 20px;
 }
 
-.indicators {
+.radioPartie {
     display: flex;
     gap: 15px;
 }
 
-.indicators input[type=radio] {
+.radioPartie input[type=radio] {
     width: 15px;
     height: 15px;
 }
 
-.metrics {
+
+/* Numbers */
+.numbers {
     position: relative;
     background-size: cover;
     background-position: center;
@@ -272,21 +298,21 @@ body {
     text-align: center;
 }
 
-.metrics::before {
+.numbers::before {
     content: '';
     position: absolute;
     inset: 0;
     background: rgba(57, 178, 73, 0.7);
 }
 
-.metrics h2 {
+.numbers h2 {
     font-size: 72px;
     margin-bottom: 60px;
     position: relative;
     z-index: 1;
 }
 
-.data-points {
+.stats {
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -294,59 +320,59 @@ body {
     z-index: 1;
 }
 
-.datapoint {
+.stat {
     max-width: 350px;
 }
 
-.datapoint h3 {
+.stat h3 {
     font-size: 42px;
     color: #000;
     margin-bottom: 15px;
 }
 
-.datapoint p {
+.stat p {
     font-size: 18px;
     line-height: 1.6;
     color: var(--gray);
 }
 
-.mission-statement {
-    background: url(/asset/image/home/Rectangle-1270.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Restoring */
+.restoring {
+    background: url(/asset/image/home/Rectangle\ 1270.png);
     padding: 120px 80px;
     text-align: center;
     height: 100vh;
 }
 
-.mission-statement h2 {
+.restoring h2 {
     font-size: 90px;
     line-height: 1.1;
     font-weight: 400;
 }
 
-.highlight-text {
+.green {
     color: var(--green-light);
 }
 
-.reviews {
+/* Testimonials */
+.testimonials {
     background: rgba(57, 178, 73, 0.38);
     padding: 100px 80px;
     text-align: center;
 }
 
-.reviews-header h2 {
+.section-header h2 {
     font-size: 72px;
     margin-bottom: 10px;
 }
 
-.reviews-header p {
+.section-header p {
     font-size: 24px;
     letter-spacing: 0.15em;
     margin-bottom: 60px;
 }
 
-.reviews-layout {
+.testimonial-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
@@ -354,7 +380,7 @@ body {
     margin: 0 auto 60px;
 }
 
-.review-box {
+.testimonial-card {
     background: var(--green-primary);
     border-radius: 20px;
     padding: 50px;
@@ -362,7 +388,7 @@ body {
     position: relative;
 }
 
-.quotemark {
+.quote {
     font-size: 100px;
     color: var(--green-light);
     position: absolute;
@@ -370,20 +396,20 @@ body {
     left: 30px;
 }
 
-.review-content {
+.quote-text {
     font-size: 60px;
     line-height: 1.1;
     margin: 40px 0 40px 40px;
 }
 
-.reviewer {
+.author {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-left: 40px;
 }
 
-.profile-pic {
+.author-img {
     width: 80px;
     height: 80px;
     border-radius: 4px;
@@ -392,416 +418,79 @@ body {
     background-color: #28377C;
 }
 
-.reviewer h4 {
+.author h4 {
     font-size: 36px;
     margin-bottom: 5px;
 }
 
-.reviewer p {
+.author p {
     font-size: 16px;
 }
 
-.closing-message {
+/* Footer CTA */
+.footer-cta {
     background: rgba(57, 178, 73, 0.38);
     padding: 80px 0;
     text-align: center;
 }
 
-.closing-message h2 {
+.footer-cta h2 {
     font-size: 72px;
     margin-bottom: 15px;
 }
 
-.closing-message p {
+.footer-cta p {
     font-size: 24px;
 }
 
-footer {
-    background: var(--green-light);
-    padding: 30px 80px;
-}
 
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-inner a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.platform-icon {
-    width: 30px;
-    height: 30px;
-    background: var(--white);
-    color: #0F2522;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.3s;
-}
-
-.platform-icon:hover {
-    transform: scale(1.1);
-}
-
-.back-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: var(--green-primary);
-    border: none;
-    color: var(--white);
-    font-size: 40px;
-    cursor: pointer;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.2);
-    z-index: 1000;
-    transition: all 0.3s;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.back-top:hover {
-    background: #2d8f3a;
+/* Responsive */
+@media (max-width: 1024px) {
+    .content-card {
+        flex-direction: column;
+    }
+    
+    .content-card.reverse {
+        flex-direction: column;
+    }
+    
+    .card-img {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-    .topbar {
-        top: 10px;
-        right: 15px;
-        gap: 8px;
-    }
-
-    .updates-link,
-    .primary-nav {
-        font-size: 18px;
-        padding: 10px 20px;
-        border-radius: 12px;
-    }
-
-    .banner {
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .banner-text {
-        padding: 0 20px;
-        max-width: 100%;
-    }
-
-    .banner h1 {
+    .hero h1 {
         font-size: 42px;
-        margin-bottom: 30px;
     }
-
-    .principles p {
+    
+    .hero-values p {
         font-size: 28px;
-        margin-bottom: 10px;
     }
-
-    .principles .emphasis {
+    
+    .hero-values .highlight {
         font-size: 42px;
-        margin-top: 15px;
     }
-
-    .cta-main {
-        padding: 15px 40px;
-        font-size: 22px;
-    }
-
-    .features {
-        padding: 60px 20px;
-        height: auto;
-    }
-
-    .feature-block {
-        gap: 30px;
-        margin: 30px auto;
+    
+    .carousel-track {
         flex-direction: column;
     }
-
-    .feature-block.alternate {
-        margin-top: 30px;
-        flex-direction: column;
-    }
-
-    .visual {
-        height: 280px;
-        min-width: auto;
-        width: 100%;
-    }
-
-    .description h2 {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-
-    .description p {
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-
-    .action-link {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    .gallery-area {
-        padding: 60px 15px;
-        height: auto;
-    }
-
-    .slide-img {
-        width: 100px;
-        height: 70px;
-        margin: 3px;
-    }
-
-    .showcase p {
-        font-size: 24px;
-    }
-
-    .slider-controls {
-        gap: 15px;
-        margin-top: 20px;
-    }
-
-    .slider-controls a {
-        font-size: large;
-    }
-
-    .indicators input[type=radio] {
-        width: 12px;
-        height: 12px;
-    }
-
-    .metrics {
-        padding: 60px 20px;
-    }
-
-    .metrics h2 {
-        font-size: 42px;
-        margin-bottom: 30px;
-    }
-
-    .data-points {
+    
+    .stats {
         flex-direction: column;
         gap: 40px;
     }
-
-    .datapoint {
-        max-width: 100%;
-    }
-
-    .datapoint h3 {
-        font-size: 36px;
-    }
-
-    .datapoint p {
-        font-size: 16px;
-    }
-
-    .mission-statement {
-        padding: 60px 20px;
-        min-height: 70vh;
-        height: auto;
-    }
-
-    .mission-statement h2 {
+    
+    .restoring h2 {
         font-size: 48px;
     }
-
-    .reviews {
-        padding: 60px 20px;
-    }
-
-    .reviews-header h2 {
-        font-size: 42px;
-    }
-
-    .reviews-header p {
-        font-size: 16px;
-        margin-bottom: 40px;
-    }
-
-    .reviews-layout {
-        gap: 20px;
-        margin-bottom: 40px;
-        grid-template-columns: 1fr;
-    }
-
-    .review-box {
-        padding: 30px;
-    }
-
-    .quotemark {
-        font-size: 70px;
-        top: 10px;
-        left: 20px;
-    }
-
-    .review-content {
+    
+    .quote-text {
         font-size: 36px;
-        margin: 30px 0 30px 20px;
-    }
-
-    .reviewer {
-        margin-left: 20px;
-        gap: 15px;
-    }
-
-    .profile-pic {
-        width: 60px;
-        height: 60px;
-    }
-
-    .reviewer h4 {
-        font-size: 24px;
-    }
-
-    .reviewer p {
-        font-size: 14px;
-    }
-
-    .closing-message {
-        padding: 50px 20px;
-    }
-
-    .closing-message h2 {
-        font-size: 42px;
-    }
-
-    .closing-message p {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 20px;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .social-links {
-        gap: 12px;
-    }
-
-    .platform-icon {
-        width: 35px;
-        height: 35px;
-    }
-
-    .back-top {
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
-        bottom: 20px;
-        right: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .updates-link,
-    .primary-nav {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    .banner h1 {
-        font-size: 36px;
-    }
-
-    .principles p {
-        font-size: 24px;
-    }
-
-    .principles .emphasis {
-        font-size: 36px;
-    }
-
-    .cta-main {
-        padding: 12px 30px;
-        font-size: 18px;
-    }
-
-    .description h2 {
-        font-size: 28px;
-    }
-
-    .description p {
-        font-size: 14px;
-    }
-
-    .visual {
-        height: 220px;
-    }
-
-    .slide-img {
-        width: 90px;
-        height: 60px;
-    }
-
-    .showcase p {
-        font-size: 20px;
-    }
-
-    .metrics h2 {
-        font-size: 36px;
-    }
-
-    .datapoint h3 {
-        font-size: 32px;
-    }
-
-    .datapoint p {
-        font-size: 15px;
-    }
-
-    .mission-statement h2 {
-        font-size: 38px;
-    }
-
-    .reviews-header h2 {
-        font-size: 36px;
-    }
-
-    .review-content {
-        font-size: 28px;
-    }
-
-    .reviewer h4 {
-        font-size: 20px;
-    }
-
-    .closing-message h2 {
-        font-size: 36px;
-    }
-
-    .closing-message p {
-        font-size: 16px;
-    }
-
-    .back-top {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
     }
 }

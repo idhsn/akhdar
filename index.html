@@ -5,174 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All For A Better Environment</title>
     <link rel="stylesheet" href="asset/style/index.css">
+    <link rel="stylesheet" href="asset/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="topbar">
-        <a href="#" class="updates-link">news</a>
-        <a href="#" class="primary-nav">MENU</a>
+    <nav class="navbar">
+        <div class="news-btn">news</div>
+        <button class="navBarButtonMenu">Menu</button>
+        <div class="nav-links">
+            <a href="index.html">Acceuil</a>
+            <a href="problem.html">Problems</a>
+            <a href="article.html">Arcticle</a>
+            <a href="#">About us</a>
+        </div>
     </nav>
 
-    <section class="banner" style="background-image: url('asset/image/home/main.png');">
-        <div class="banner-text">
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('asset/image/home/main.png');" id="hero">
+        <div class="hero-content">
             <h1>All FOR A BETTER<br>Environment</h1>
-            <div class="principles">
+            <div class="hero-values">
                 <p>Delivering Top Standards</p>
                 <p>Maintained at all time</p>
                 <p>Built on Reliability</p>
-                <p class="emphasis">Protected by Intent</p>
+                <p class="highlight">Protected by Intent</p>
             </div>
-            <a href="#" class="cta-main">discover us</a>
+            <button class="btn-primary">discover us</button>
         </div>
     </section>
 
-    <section class="features">
-        <div class="feature-block">
-            <div class="visual" style="background-image: url('asset/image/home/bg\ 2\ main.png');"></div>
-            <div class="description">
-                <h2>Clean recycling, real impact.</h2>
-                <p>Simple daily actions keep plastics out of waterways and give materials a second life. Join our neighborhood drives and see how small habits scale.​</p>
-                <a href="#" class="action-link">Learn More</a>
+    <!-- Content Cards -->
+    <section class="content-section">
+        <div class="content-card">
+            <div class="card-img" style="background-image: url('asset/image/home/bg\ 2\ main.png');"></div>
+            <div class="card-text">
+                <h2>TYPE SHIT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn-green">Learn More</button>
             </div>
         </div>
 
-        <div class="feature-block alternate">
-            <div class="description">
-                <h2>Solar that works for you.</h2>
-                <p>From rooftop installs to micro‑grids, we design systems that cut bills, carbon, and outages—without cutting corners.</p>
-                <a href="#" class="action-link">Learn More</a>
+        <div class="content-card reverse">
+            <div class="card-text">
+                <h2>Type shit</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn-green">Learn More</button>
             </div>
-            <div class="visual" style="background-image: url('asset/image/home/Rectangle\ 10.png');"></div>
+            <div class="card-img" style="background-image: url('asset/image/home/Rectangle\ 10.png');"></div>
         </div>
     </section>
 
-    <section class="gallery-area">
-        <div class="gallery-wrapper">
-            <div class="showcase">
+    <!-- Carousel -->
+    <section class="exploreOurSecretSection">
+        <nav>
+            <button class="navBarButtonMenu">Menu</button>
+        </nav>
+        <div class="imagesButtonRadioSectionDiv">
+            <div class="imagesDivThreeExplore">
                 <p>Explore Our Secrets</p>
-                <div class="slider-controls">
-                    <a href="#"> < </a>
+                <div class="imagesBUtoonPartie">
+                    <button> < </button>
                     <div>
                         <div>
-                            <img src="asset/image/problem/Rectangle 1258.png" class="slide-img">
-                            <img src="asset/image/problem/Rectangle 1259.png" class="slide-img">
-                            <img src="asset/image/problem/Rectangle 1260.png" class="slide-img">
+                            <img src="asset/image/problem/Rectangle 1258.png" class="threeImageGood">
+                            <img src="asset/image/problem/Rectangle 1259.png" class="threeImageGood">
+                            <img src="asset/image/problem/Rectangle 1260.png" class="threeImageGood">
                         </div>
                         <div></div>
                     </div>
-                    <a href="#"> > </a>
+                    <button> > </button>
                 </div>
             </div>
-            <div class="indicators">
-                <input type="radio" name="slide" checked>
-                <input type="radio" name="slide">
-                <input type="radio" name="slide">
-                <input type="radio" name="slide">
-                <input type="radio" name="slide">
+            <div class="radioPartie">
+                <input type="radio" name="imagePage" checked>
+                <input type="radio" name="imagePage">
+                <input type="radio" name="imagePage">
+                <input type="radio" name="imagePage">
+                <input type="radio" name="imagePage">
+            </div>
+        </div>
+        <div class="byTHeNUmberSection">
+            <p class="byTHeNUmberText">By The Numbers</p>
+            <div class="textNumPartie">
+                <div class="onetextNumP">
+                    <p class="numPara">100+</p>
+                    <p class="paragrapheLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                </div>
+                <div class="onetextNumP">
+                    <p class="numPara">43,000+</p>
+                    <p class="paragrapheLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Lorem ipsum dolor sit amet, consectetur  elit. Fusce commodo magna.</p>
+                </div>
+                <div class="onetextNumP">
+                    <p class="numPara">30+</p>
+                    <p class="paragrapheLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="metrics" style="background-image: url('TheActuaImgs/nature-bg.jpg');">
+    <!-- Statistics -->
+    <section class="numbers" style="background-image: url('TheActuaImgs/nature-bg.jpg');">
         <h2>By The Numbers</h2>
-        <div class="data-points">
-            <div class="datapoint">
+        <div class="stats">
+            <div class="stat">
                 <h3>100+</h3>
-                <p>local projects delivered. From tree plantings to energy retrofits, each one tracked for outcomes, not headlines.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
             </div>
-            <div class="datapoint">
+            <div class="stat">
                 <h3>43,000+</h3>
-                <p>people reached. Workshops, school programs, and open days that turn climate anxiety into practical action.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
             </div>
-            <div class="datapoint">
+            <div class="stat">
                 <h3>30+</h3>
-                <p>partner organizations. Municipalities, co‑ops, and businesses aligning investment with measurable sustainability goals.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
             </div>
         </div>
     </section>
 
-    <section class="mission-statement">
+    <!-- Restoring Earth -->
+    <section class="restoring">
         <h2>
             RESTORING EARTH'S<br>
             BALANCE<br>
-            WITH <span class="highlight-text">GREENPULSE</span><br>
+            WITH <span class="green">GREENPULSE</span><br>
             FOCUSED ON<br>
-            <span class="highlight-text">WATER, WILDLIFE, AIR.</span>
+            <span class="green">WATER, WILDLIFE, AIR.</span>
         </h2>
     </section>
 
-    <section class="reviews">
-        <div class="reviews-header">
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
             <h2>People's thoughts</h2>
             <p>SEE WHAT ARE OTHERS SAYING</p>
         </div>
-        <div class="reviews-layout">
-            <div class="review-box">
-                <span class="quotemark">"</span>
-                <p class="review-content">Meticulous design, dependable leadership. The team showed up prepared, left the site cleaner than they found it, and hit every milestone.</p>
-                <div class="reviewer">
-                    <div class="profile-pic" style="background-image: url('asset/image/home/image-3.png');"></div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <span class="quote">"</span>
+                <p class="quote-text">Meticulous design, dependable leadership</p>
+                <div class="author">
+                    <div class="author-img" style="background-image: url('TheActuaImgs/author1.jpg');"></div>
                     <div>
                         <h4>Fatima Lock</h4>
                         <p>Dipanage</p>
                     </div>
                 </div>
             </div>
-            <div class="review-box">
-                <span class="quotemark">"</span>
-                <p class="review-content">Transparent planning, measurable results. We saw lower utility costs within months and a safer space for our kids.</p>
-                <div class="reviewer">
-                    <div class="profile-pic" style="background-image: url('asset/image/home/image-2.png');"></div>
+            <!-- Repeat for other testimonials -->
+            <div class="testimonial-card">
+                <span class="quote">"</span>
+                <p class="quote-text">Meticulous design, dependable leadership</p>
+                <div class="author">
+                    <div class="author-img" style="background-image: url('TheActuaImgs/author2.jpg');"></div>
                     <div>
-                        <h4>Halima Lbidawiya</h4>
-                        <p>RH</p>
+                        <h4>Fatima Lock</h4>
+                        <p>Dipanage</p>
                     </div>
                 </div>
             </div>
-            <div class="review-box">
-                <span class="quotemark">"</span>
-                <p class="review-content">Community at the center. They listened first, tailored the project, and trained our volunteers for long‑term care.</p>
-                <div class="reviewer">
-                    <div class="profile-pic" style="background-image: url('asset/image/home/image-4.png');"></div>
+            <div class="testimonial-card">
+                <span class="quote">"</span>
+                <p class="quote-text">Meticulous design, dependable leadership</p>
+                <div class="author">
+                    <div class="author-img" style="background-image: url('TheActuaImgs/author3.jpg');"></div>
                     <div>
-                        <h4>Mohamed Ali</h4>
-                        <p>Dancer</p>
+                        <h4>Fatima Lock</h4>
+                        <p>Dipanage</p>
                     </div>
                 </div>
             </div>
-            <div class="review-box">
-                <span class="quotemark">"</span>
-                <p class="review-content">Science‑led and people‑powered. Data dashboards made progress easy to follow and celebrate.</p>
-                <div class="reviewer">
-                    <div class="profile-pic" style="background-image: url('asset/image/home/image-1.png');"></div>
+            <div class="testimonial-card">
+                <span class="quote">"</span>
+                <p class="quote-text">Meticulous design, dependable leadership</p>
+                <div class="author">
+                    <div class="author-img" style="background-image: url('TheActuaImgs/author4.jpg');"></div>
                     <div>
-                        <h4>Hafid Noaman</h4>
-                        <p>Chef</p>
+                        <h4>Fatima Lock</h4>
+                        <p>Dipanage</p>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="cta-main">More About Us</a>
+        <button class="btn-primary">More About Us</button>
     </section>
 
-    <section class="closing-message">
+    <!-- Footer CTA -->
+    <section class="footer-cta">
         <h2>See you soon!</h2>
         <p>We hope to meet each other very soon.</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="footer-inner">
-            <a href="#">Menu</a>
-            <div class="social-links">
-                <a href="#" class="platform-icon">in</a>
-                <a href="#" class="platform-icon">f</a>
-                <a href="#" class="platform-icon">G</a>
+        <div class="footer-content">
+            <span>Menu</span>
+            <div class="social">
+                <a href="#" class="social-icon">in</a>
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">G</a>
             </div>
-            <span>Copyright © 2025</span>
+            <span>Copyright © 2019</span>
         </div>
+        <a href="#hero"><button class="scroll-top">↑</button></a>
     </footer>
-    <a href="#" class="back-top">↑</a>
+
+    <script>
+        const menuBtn = document.querySelector(".navBarButtonMenu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>
