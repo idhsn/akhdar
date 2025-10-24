@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --green-primary: #39B249;
+    --green-light: #83C132;
+    --white: #FFFFFF;
+    --dark: #010A20;
+    --gray: #E0E0E0;
+}
+
+nav {
+    padding-top: 25px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBarButtonMenu {
+    border-radius: 10px;
+    background-color: #83C132;
+    color: white;
+    border: none;
+    width: 110px;
+    height: 50px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.navBarButtonMenu:hover {
+    background-color: white;
+    color: #83C132;
+    font-size: x-large;
+    box-shadow: 1px 1px 3px black;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1e293b;
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    width: 110px;
+    text-align: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-top: 1px solid #334155;
+    transition: background-color 0.3s;
+    background-color: var(--green-light);
+    width: 110px;
+}
+
+.nav-links a:hover {
+    background-color: var(--green-primary);
+}
+
+.show {
+    display: flex;
+}
+
+footer {
+    background: var(--green-light);
+    padding: 30px 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--white);
+    color: #0F2522;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll Top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--green-primary);
+    border: none;
+    color: var(--white);
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.scroll-top:hover {
+    background: #2d8f3a;
+}
