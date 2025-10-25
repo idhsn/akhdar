@@ -120,7 +120,6 @@ body {
 }
 
 .features {
-    background: url(/asset/image/home/bg.png);
     background-size: cover;
     height: 1400px;
     width: 100%;
